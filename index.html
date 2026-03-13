@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>吉卜力 IP 子網計算機</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<div class="container">
+
+<h1>🌿 IP 子網計算機</h1>
+<p class="subtitle">吉卜力風格 Subnet Calculator</p>
+
+<div class="card">
+
+<label>IP 位址</label>
+<input type="text" id="ip" placeholder="例如: 192.168.1.10">
+
+<label>首碼 / 子網路遮罩</label>
+<input type="text" id="mask" placeholder="例如: /24 或 255.255.255.0">
+
+<button onclick="calculate()">計算</button>
+
+</div>
+
+<div class="card result">
+
+<p><b>子網路遮罩：</b><span id="subnet"></span></p>
+<p><b>網段名稱：</b><span id="network"></span></p>
+<p><b>廣播位址：</b><span id="broadcast"></span></p>
+<p><b>IP 網段範圍：</b><span id="range"></span></p>
+<p><b>可用 IP 範圍：</b><span id="usable"></span></p>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
